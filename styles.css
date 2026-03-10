@@ -405,6 +405,11 @@ h1, h2, h3, h4 {
     line-height: 1.5;
 }
 
+.problem-line {
+    display: block;
+    white-space: nowrap;
+}
+
 .lead-text-modern {
     font-size: 1.25rem;
     line-height: 1.8;
@@ -780,7 +785,10 @@ footer {
     }
 
     .problem-container { padding: 40px 20px; }
-    .problem-title { font-size: 1.8rem; }
+    .problem-title { 
+        font-size: clamp(1.2rem, 5.5vw, 1.8rem); 
+        line-height: 1.4;
+    }
     .truth-text { font-size: 1.15rem; }
     .alert-box { font-size: 1.15rem; padding: 20px; }
     .pain-point-bubble { flex-direction: column; text-align: center; gap: 16px; padding: 24px; }
