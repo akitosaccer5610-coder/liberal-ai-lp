@@ -619,6 +619,147 @@ h1, h2, h3, h4 {
     font-size: 2rem;
 }
 
+/* Skills Section (New) */
+.skills {
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skills-list {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.skill-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 24px 30px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill-item:hover {
+    transform: translateX(10px);
+    background: rgba(15, 52, 96, 0.8);
+    border-color: rgba(0, 200, 83, 0.3);
+}
+
+.skill-item i {
+    font-size: 1.5rem;
+}
+
+/* Founder Section (New) */
+.founder {
+    background-color: var(--bg-light);
+}
+
+.founder-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.founder-image {
+    display: flex;
+    justify-content: center;
+}
+
+.founder-img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%; /* Requested circular crop */
+    border: 8px solid var(--white);
+}
+
+.founder-quote {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: var(--text-main);
+    font-weight: 500;
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 24px;
+    border-left: 4px solid var(--accent);
+}
+
+.founder-signature {
+    display: flex;
+    flex-direction: column;
+}
+
+.founder-title {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+}
+
+.founder-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    font-family: serif;
+    letter-spacing: 2px;
+}
+
+/* Company Info Section (New) */
+.company-info {
+    position: relative;
+}
+
+.company-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.shadow-soft {
+    box-shadow: var(--shadow-soft);
+}
+
+.company-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.company-row {
+    display: flex;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.company-row.border-0 {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.company-row dt {
+    width: 200px;
+    flex-shrink: 0;
+    font-weight: 700;
+    color: var(--primary);
+    font-size: 1.1rem;
+}
+
+.company-row dd {
+    flex-grow: 1;
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
 /* FAQ Section */
 .faq-accordion {
     max-width: 800px;
@@ -794,6 +935,44 @@ footer {
     
     .btn-hero, .btn-mid { font-size: clamp(0.95rem, 4.3vw, 1.15rem); }
     .btn-bottom { font-size: clamp(1.1rem, 5vw, 1.25rem); }
+    
+    /* Fit elements inside new sections on Mobile */
+    .founder-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .founder-quote {
+        text-align: left;
+        font-size: 1.15rem;
+    }
+    
+    .founder-img {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .company-card {
+        padding: 30px 20px;
+    }
+    
+    .company-row {
+        flex-direction: column;
+        gap: 8px;
+        padding: 16px 0;
+    }
+    
+    .company-row dt {
+        width: 100%;
+        color: var(--text-light);
+        font-size: 0.95rem;
+    }
+    
+    .skill-item {
+        font-size: 1rem;
+        padding: 20px;
+    }
     
     .faq-title {
         font-size: clamp(1.3rem, 5.5vw, 2rem) !important;
