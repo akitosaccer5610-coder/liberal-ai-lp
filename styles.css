@@ -768,6 +768,11 @@ footer {
         font-size: 1rem;
     }
     
+    /* Responsive Spans */
+    .sp-block {
+        display: block;
+    }
+    
     .section-title {
         font-size: clamp(1.5rem, 6.5vw, 2rem);
         line-height: 1.4;
@@ -826,6 +831,11 @@ footer {
     
     .mid-cta-line {
         display: block;
+    }
+    
+    .benefit-title-sp {
+        font-size: clamp(1.2rem, 5vw, 1.4rem);
+        white-space: nowrap;
     }
     
     .box-shadow-glass {
