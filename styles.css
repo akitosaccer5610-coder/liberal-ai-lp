@@ -789,6 +789,11 @@ footer {
         font-size: clamp(1.2rem, 5.5vw, 1.8rem); 
         line-height: 1.4;
     }
+    
+    .empathy-title {
+        font-size: clamp(1.1rem, 4.5vw, 2rem) !important;
+    }
+    
     .truth-text { font-size: 1.15rem; }
     .alert-box { font-size: 1.15rem; padding: 20px; }
     .pain-point-bubble { flex-direction: column; text-align: center; gap: 16px; padding: 24px; }
